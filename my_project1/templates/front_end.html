@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+ 
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a{
+        display: block;
+        padding: 8px 25px;
+        color: white;
+        text-decoration: none;
+	
+    }
+    ul li a:hover{
+        color: orange;
+        
+    }
+    ul li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        background: black;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        
+    }
+    ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+</style>
+</head>
+<body>
+<div class="container-fluid"> 
+<div class="row" style="background-color:black;">
+	<img style="width: 150px;height: 65px;" src=z.png>
+	 <ul style="text-align:right ;">
+            <li><a href="#">Job Search</a></li>
+	    <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a>
+            <ul class="dropdown">
+                <li><a href="#">Employer</a></li>
+                <li><a href="#">Job Seeker</a></li>
+                <li><a href="#">Interviewer</a></li>
+        </li></ul>
+             
+    </ul>
+
+
+</div>
+<div class="row">2</div></div>
+<!--
+ ul{
+        padding: 0;
+        list-style: none;
+        background: red;
+    }
+<div class="well well-sm">Small Well</div>
+<div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container class.</p> 
+  <p>The .container class provides a responsive fixed width container.</p>-->          
+</body> 
+</div>
